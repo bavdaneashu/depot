@@ -16,6 +16,7 @@ Rails.application.routes.draw do
     post 'login' => :create
     delete 'logout' => :destroy
     end
+    resources :support_requests, only: [ :index, :update ]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
